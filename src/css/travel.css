@@ -14,10 +14,6 @@ body {
 	background-color: #e3e5e6;
 }
 
-h2 {
-	font-size: 2.8rem;
-}
-
 h3 {
 	font-size: 1.7rem;
 }
@@ -47,7 +43,7 @@ form.active {
 }
 
 .title {
-	font-size: 2rem;
+	font-size: 2.8rem;
 }
 
 .desc {
@@ -220,7 +216,7 @@ form.active {
 	justify-content: space-between;
 	align-items: center;
 }
-.promo__titile {
+.promo__title {
 	flex-shrink: 0;
 }
 .promo__head-wrapper {
@@ -568,8 +564,18 @@ form.active {
 	.section {
 		padding: 2rem 1rem;
 	}
+	.title {
+		flex-shrink: 1;
+	}
 	.desc {
 		margin: 1rem 0;
+	}
+	.form {
+		width: 100%;
+	}
+	.form__input {
+		width: auto;
+		flex: 1 1 auto;
 	}
 
 	/* promo */
