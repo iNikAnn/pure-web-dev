@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelCo</title>
+
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/travel.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo-wrapper">
+                <div class="header__logo"></div>
+                <strong class="header__company-name">TravelCo</strong>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="" class="header__link">Destinations</a></li>
+                    <li><a href="" class="header__link">Travel Deals</a></li>
+                    <li><a href="" class="header__link">About Us</a></li>
+                    <li><a href="" class="header__link">Blog</a></li>
+                </ul>
+
+            </nav>
+            <button class="btn header__btn" type="button">Book a Travel!</button>
+            <button class="btn header__btn-burger" type="button" aria-label="Open menu"></button>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- hero -->
+        <section class="section hero">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Embark on a Journey of<br>Discovery and Delight
+                </h1>
+
+                <p class="desc hero__desc">
+                    Explore new destinations and unforgettable experiences
+                </p>
+
+                <form class="form hero__form">
+                    <span class="hero__form-icon"></span>
+                    <input class="hero__form-input" type="search" placeholder="Where are you going?">
+                    <button class="btn hero__form-btn" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- promo -->
+        <section class="section promo">
+            <div class="promo__content">
+                <div class="promo__head-wrapper">
+                    <h2 class="promo__titile">Where Do You<br>Want to Explore?</h2>
+
+                    <div class="promo__desc-wrapper">
+                        <p class="desc promo__desc">
+                            Explore points of interest in various places around the world
+                        </p>
+
+                        <button class="btn promo-btn" type="button">View all destinations</button>
+                    </div>
+                </div>
+
+                <div class="promo__cities-wrapper">
+                    <!-- city-1 -->
+                    <div class="promo__city">
+                        <img src="/src/img/travel/eiffel-tower.png" class="promo__city-img" alt="">
+
+                        <h3 class="promo__city-title">Paris</h3>
+
+                        <p class="promo__city-des">Book small group tours and indulge in the delights of Parisian
+                            cuisine, along with a wide array of captivating experiences to make your visit truly
+                            memorable.</p>
+                    </div>
+
+                    <!-- city-2 -->
+                    <div class="promo__city">
+                        <img src="/src/img/travel/big-ben.png" class="promo__city-img" alt="">
+
+                        <h3 class="promo__city-title">London</h3>
+
+                        <p class="promo__city-des">Discover the top sights and hidden gems of London through our
+                            exclusive small-group tours. Expert guides will lead you on a memorable journey through the
+                            city's rich history and vibrant culture.</p>
+                    </div>
+
+                    <!-- city-3 -->
+                    <div class="promo__city">
+                        <img src="/src/img/travel/colosseum.png" class="promo__city-img" alt="">
+
+                        <h3 class="promo__city-title">Rome</h3>
+
+                        <p class="promo__city-des">Embark on a unique and exclusive tour of Rome, granting you early
+                            access to the Vatican and Colosseum. Explore the fascinating history and timeless beauty of
+                            this ancient city with our expert guides.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- paragraph -->
+        <section class="section paragraph">
+            <div class="paragraph__content">
+                <p class="paragraph__text">
+                    We believe everyone deserves the joy of travel. No matter your background or destination, we are
+                    here to empower your journey. Let us be your guide to unforgettable experiences.
+                </p>
+            </div>
+        </section>
+
+        <!-- popular -->
+        <section class="section popular">
+            <div class="popular__content">
+                <div class="popular__header-wrapper">
+                    <h2 class="popular__title">Most popular tours</h2>
+                    <p class="desc popular__desc">
+                        VIP Access, Personalized Tours. Unforgettable Experiences.
+                    </p>
+                </div>
+
+                <div class="popular__tours-wrapper">
+                    <!-- tour-1 -->
+                    <div class="popular__tour">
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-title-wrapper">
+                                <h3 class="popular__tour-title">Munich Classic City<br>Segway Tour</h3>
+                                <span>From</span>
+                                <b class="popular__tour-cost">$75</b>
+                            </div>
+                        </div>
+
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-desc-wrapper">
+                                <p class="popular__tour-desc">
+                                    Discover the charm of Munich as you glide through its streets on a thrilling Segway
+                                    adventure. Immerse yourself in the city's rich history and vibrant culture, all
+                                    while enjoying the convenience and fun of this unique tour. Unforgettable memories
+                                    await you in the heart of Munich.
+                                </p>
+
+                                <div class="popular__tour-reviews-wrapper">
+                                    <span class="popular__tour-star" role="img" aria-label="1 star"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="2 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="3 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="4 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="5 stars"></span>
+                                    <span class="popular__tour-reviews-count">142 reviews</span>
+                                </div>
+
+                                <div class="popular__tour-icon-wrapper">
+                                    <span class="popular__tour-clock-icon"></span>
+                                    <span>Approximately 3.5 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-img-wrapper">
+                                <a href="">
+                                    <img src="/src/img/travel/Munich-Classic-City-Segway-Tour.webp"
+                                        class="popular__tour-img" alt="Girl and man on Segways">
+                                </a>
+
+                                <span class="popular__tour-link-text">Explore Now</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tour-2 -->
+                    <div class="popular__tour">
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-title-wrapper">
+                                <h3 class="popular__tour-title">Berlin Highlights<br>Bike Tour</h3>
+                                <span>From</span>
+                                <b class="popular__tour-cost">$75</b>
+                            </div>
+                        </div>
+
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-desc-wrapper">
+                                <p class="popular__tour-desc">
+                                    Embark on a captivating journey through the iconic city of Berlin on a thrilling
+                                    Highlights Bike Tour. Pedal through its historic landmarks and hidden gems,
+                                    accompanied by knowledgeable guides who will unveil the city's fascinating stories
+                                    and culture. Feel the vibrant energy of Berlin as you explore its unique
+                                    neighborhoods and must-see attractions. This immersive tour promises an
+                                    unforgettable experience that will leave you with cherished memories of this
+                                    remarkable city.
+                                </p>
+
+                                <div class="popular__tour-reviews-wrapper">
+                                    <span class="popular__tour-star" role="img" aria-label="1 star"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="2 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="3 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="4 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="5 stars"></span>
+                                    <span class="popular__tour-reviews-count">69 reviews</span>
+                                </div>
+
+                                <div class="popular__tour-icon-wrapper">
+                                    <span class="popular__tour-clock-icon"></span>
+                                    <span>Approximately 5 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-img-wrapper">
+                                <a href="">
+                                    <img src="/src/img/travel/Berlin-Highlights-Bike-Tour.webp"
+                                        class="popular__tour-img" alt="Berlin landmark">
+                                </a>
+
+                                <span class="popular__tour-link-text">Explore Now</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tour-3 -->
+                    <div class="popular__tour">
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-title-wrapper">
+                                <h3 class="popular__tour-title">Small Group VIP<br>Versailles Bike Tour</h3>
+                                <span>From</span>
+                                <b class="popular__tour-cost">$75</b>
+                            </div>
+                        </div>
+
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-desc-wrapper">
+                                <p class="popular__tour-desc">
+                                    Immerse yourself in the grandeur of Versailles on an exclusive Small Group VIP Bike
+                                    Tour. This extraordinary experience allows you to explore the opulent palace and its
+                                    breathtaking gardens with personalized attention in a small, intimate group setting.
+                                    Marvel at the splendor of the royal residence, learning about its rich history and
+                                    captivating anecdotes from our expert guides.
+                                </p>
+
+                                <div class="popular__tour-reviews-wrapper">
+                                    <span class="popular__tour-star" role="img" aria-label="1 star"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="2 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="3 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="4 stars"></span>
+                                    <span class="popular__tour-star" role="img" aria-label="5 stars"></span>
+                                </div>
+
+                                <div class="popular__tour-icon-wrapper">
+                                    <span class="popular__tour-clock-icon"></span>
+                                    <span>Approximately 6.5 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__tour-block">
+                            <div class="popular__tour-img-wrapper">
+                                <a href="">
+                                    <img src="/src/img/travel/Versailles-Bike-Tour.webp" class="popular__tour-img"
+                                        alt="Versailles">
+                                </a>
+
+                                <span class="popular__tour-link-text">Explore Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn popular__btn" type="button">Explore more</button>
+            </div>
+        </section>
+
+        <!-- blog -->
+        <section class="section blog">
+            <div class="blog__content">
+                <h2 class="blog__title">Blog and articles</h2>
+
+                <div class="blog__cards-wrapper">
+                    <!-- card-1 -->
+                    <div class="blog__card">
+                        <div class="blog__img-wrapper">
+                            <img src="/src/img/travel/2022-Travel-Trends.webp" class="blog__img"
+                                alt="Travelers looking into the distance from the cliffs">
+                        </div>
+
+                        <div class="blog__info-wrapper">
+                            <span>Now 13, 2022</span>
+                            <a href="" class="blog__link">
+                                <h3>2022 Travel Trends - what you need to know</h3>
+                            </a>
+                            <p class="blog__info-text">
+                                As the world reopens its doors to travel, 2022 promises to be an exciting year for
+                                adventurers and globetrotters alike. With a newfound appreciation for exploring the
+                                wonders of the world, travelers are seeking unique experiences that go beyond the beaten
+                                path.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- card-1 -->
+                    <div class="blog__card">
+                        <div class="blog__img-wrapper">
+                            <img src="/src/img/travel/Hiking-In-Iceland.webp" class="blog__img"
+                                alt="Tourists in Iceland">
+                        </div>
+
+                        <div class="blog__info-wrapper">
+                            <span>Nov 9, 2022</span>
+                            <a href="" class="blog__link">
+                                <h3>The Ultimate Guide to Hiking in Iceland</h3>
+                            </a>
+                            <p class="blog__info-text">
+                                Discover the breathtaking beauty of Iceland's pristine landscapes with our comprehensive
+                                guide to hiking adventures. From rugged volcanic terrains to cascading waterfalls and
+                                ethereal glaciers, this guide will lead you through some of the most awe-inspiring
+                                hiking trails in the land of fire and ice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn blog__btn" type="button">View more</button>
+            </div>
+        </section>
+
+        <!-- feedback -->
+        <section class="section feedback">
+            <div class="feedback__content">
+                <div class="feedback__info-wrapper">
+                    <h2>What our Travelers<br>are saying</h2>
+
+                    <div class="feedback__text-wrapper">
+                        <p class="feedback__text">
+                            My trip to London was absolutely unforgettable! From the historic
+                            charm of the Tower of London to the vibrant energy of Covent Garden, every moment was filled
+                            with wonder and excitement.
+                        </p>
+
+                        <b>- Mirra Philips</b>
+                        <span>(London Bike Tour)</span>
+                    </div>
+
+                    <div class="feedback__btn-wrapper">
+                        <button class="btn" type="button">Next</button>
+                    </div>
+                </div>
+
+                <div class="feedback__img-wrapper">
+                    <img src="/src/img/travel/Girl-London.webp" class="feedback__img" alt="Girl in London">
+                </div>
+            </div>
+        </section>
+
+        <!-- subscribe -->
+        <section class="section subscribe">
+            <div class="subscribe__content">
+                <h2>Your journey starts here!</h2>
+
+                <p class="desc">Stay up to date with the latest information from us</p>
+
+                <form action="" class="form subscribe__form">
+                    <input class="subscribe__input" type="email" placeholder="Enter your email">
+                    <button class="btn" type="button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="section footer">
+        <div class="footer__content">
+            <div class="footer__block footer__logo-block">
+                <img src="/src/img/travel/Logo.svg" class="footer__logo" alt="logo">
+                <p>Explore the World<br>TravelCo 2023</p>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__block-title">Navigation</h4>
+                <ul class="footer__ul">
+                    <li><a href="">Destinations</a></li>
+                    <li><a href="">Travel Deals</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__block-title">Other</h4>
+                <ul class="footer__ul">
+                    <li><a href="">Partners and sponsors</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Site map</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__block-title">Social</h4>
+                <ul class="footer__ul">
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Telegram</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__design-author">
+            Design inspired by Columbus. Link:
+            <a href="https://dribbble.com/columbusstudio" target="_blank">dribbble.com/columbusstudio</a>
+        </div>
+    </footer>
+
+
+    <script src="/src/scripts/travel/invertHeaderOnScroll.js"></script>
+    <script src="/src/scripts/travel/popularTourDescLength.js"></script>
+    <script src="/src/scripts/travel/blogInfoTextLength.js"></script>
+    <script src="/src/scripts/travel/activateForm.js"></script>
+</body>
+
+</html>
