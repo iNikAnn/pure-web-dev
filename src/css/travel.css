@@ -570,6 +570,13 @@ form.active {
 	.desc {
 		margin: 1rem 0;
 	}
+	.form {
+		width: 100%;
+	}
+	.form__input {
+		width: auto;
+		flex: 1 1 auto;
+	}
 
 	/* promo */
 	.promo {
