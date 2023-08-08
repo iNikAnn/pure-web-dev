@@ -438,6 +438,7 @@ form.active {
 /* feedback */
 .feedback {
 	background-color: #fafafa;
+	z-index: 1;
 }
 .feedback::before {
 	position: absolute;
@@ -452,6 +453,7 @@ form.active {
 	opacity: 0.03;
 	filter: blur(1px);
 	pointer-events: none;
+	z-index: -1;
 }
 .feedback__content {
 	display: flex;
