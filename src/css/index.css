@@ -5,8 +5,7 @@
 html {
 	background-color: #0d1117;
 	color: #bfbfbf;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -64,5 +63,9 @@ a:hover {
 @media screen and (max-width: 576px) {
 	.content-wrapper {
 		width: 100%;
+	}
+
+	ul {
+		gap: 15px;
 	}
 }
