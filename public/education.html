@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/education.css">
+</head>
+
+<body id="body">
+    <!-- overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- menu -->
+    <aside id="menu" class="aside menu">
+        <div class="menu__content">
+            <!-- title -->
+            <div class="menu__logo-wrapper">
+                <h1 class="menu__title">logo</h1>
+
+                <button id="menu-btn" class="btn menu__btn" type="button" aria-label="Expand or collapse menu">
+                    <span class="menu__btn-icon"></span>
+                </button>
+            </div>
+
+            <!-- nav list -->
+            <nav class="menu__nav">
+                <ul class="menu__nav-list">
+                    <!-- nav item -->
+                    <li class="menu__nav-item active">
+                        <a href="" class="menu__nav-link">
+                            <div class="menu__nav-link-wrapper">
+                                <div class="menu__nav-icon-wrapper">
+                                    <span class="menu__nav-icon menu__nav-icon-dashboard"></span>
+                                </div>
+
+                                <span class="menu__nav-text">Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="menu__nav-item">
+                        <a href="" class="menu__nav-link">
+                            <div class="menu__nav-link-wrapper">
+                                <div class="menu__nav-icon-wrapper">
+                                    <span class="menu__nav-icon menu__nav-icon-profile"></span>
+                                </div>
+
+                                <span class="menu__nav-text">Profile</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="menu__nav-item">
+                        <a href="" class="menu__nav-link">
+                            <div class="menu__nav-link-wrapper">
+                                <div class="menu__nav-icon-wrapper">
+                                    <span class="menu__nav-icon menu__nav-icon-courses"></span>
+                                </div>
+
+                                <span class="menu__nav-text">Courses</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="menu__nav-item">
+                        <a href="" class="menu__nav-link">
+                            <div class="menu__nav-link-wrapper">
+                                <div class="menu__nav-icon-wrapper">
+                                    <span class="menu__nav-icon menu__nav-icon-message"></span>
+                                </div>
+
+                                <span class="menu__nav-text">Message</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="menu__nav-item">
+                        <a href="" class="menu__nav-link">
+                            <div class="menu__nav-link-wrapper">
+                                <div class="menu__nav-icon-wrapper">
+                                    <span class="menu__nav-icon menu__nav-icon-settings"></span>
+                                </div>
+
+                                <span class="menu__nav-text">Settings</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- img -->
+            <div class="menu__img-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" class="menu__img-mask-top" viewBox="0 0 1600 80.32">
+                    <path d="m0,80.32h1600S1191.67,1.91,790.33,1.91,0,80.32,0,80.32Z" />
+                </svg>
+
+                <img src="../src/img/education/menu-img.svg" class="menu__img" alt="">
+
+                <div class="menu__img-text-wrapper">
+                    <strong>15 million learners</strong>
+                    <br>
+                    <small>around the world!</small>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="menu__img-mask-bottom" viewBox="0 0 1600 80.32">
+                    <path d="m0,80.32h1600S1191.67,1.91,790.33,1.91,0,80.32,0,80.32Z" />
+                </svg>
+            </div>
+        </div>
+    </aside>
+
+    <!-- mobile header -->
+    <div class="mobile__header">
+        <h1>Logo</h1>
+
+        <button id="mobile-menu-btn" class="btn menu__btn" type="button" aria-label="Expand or collapse menu">
+            <span class="menu__btn-icon"></span>
+        </button>
+    </div>
+
+    <!-- main content -->
+    <main class="main">
+        <!-- popular -->
+        <section class="section popular">
+            <div class="popular__content">
+                <div class="popular__header">
+                    <h2 class="popular__title">Popular courses</h2>
+                    <a href="" class="popular__link">View more</a>
+                </div>
+
+                <!-- cards -->
+                <div class="popular__cards-wrapper">
+                    <!-- card 1 -->
+                    <div class="popular__card">
+                        <div class="popular__card-img-wrapper">
+                            <img src="../src/img/education/popular-01.svg" class="popular__card-img" alt="">
+                        </div>
+
+                        <h3 class="popular__card-title">Creating Responsive Web Design</h3>
+
+                        <div class="popular__card-progress-wrapper">
+                            <div class="popular__card-progress popular__card-progress1"></div>
+
+                            <div class="popular__card-info">
+                                <small>Booked: <b>23%</b></small>
+                                <small>Days: <b>21</b></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="popular__card">
+                        <div class="popular__card-img-wrapper">
+                            <img src="../src/img/education/popular-02.svg" class="popular__card-img" alt="">
+                        </div>
+
+                        <h3 class="popular__card-title">User Experience Design Fundamentals</h3>
+
+                        <div class="popular__card-progress-wrapper">
+                            <div class="popular__card-progress popular__card-progress2"></div>
+
+                            <div class="popular__card-info">
+                                <small>Booked: <b>55%</b></small>
+                                <small>Days: <b>14</b></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="popular__card">
+                        <div class="popular__card-img-wrapper">
+                            <img src="../src/img/education/popular-03.svg" class="popular__card-img" alt="">
+                        </div>
+
+                        <h3 class="popular__card-title">Design Thinking: The Beginner's Guide</h3>
+
+                        <div class="popular__card-progress-wrapper">
+                            <div class="popular__card-progress popular__card-progress3"></div>
+
+                            <div class="popular__card-info">
+                                <small>Booked: <b>81%</b></small>
+                                <small>Days: <b>07</b></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- my-courses -->
+        <section class="section my-courses">
+            <div class="my-courses__content">
+                <!-- menu -->
+                <div class="my-courses__menu">
+                    <h2 class="my-courses__menu-title">My courses</h2>
+
+                    <nav>
+                        <ul class="my-courses__menu-list">
+                            <li><button href="" class="link my-courses__menu-item active" type="button">Current</button></li>
+                            <li><button href="" class="link my-courses__menu-item" type="button">Archived</button></li>
+                            <li><button href="" class="link my-courses__menu-item" type="button">Upcoming</button></li>
+                            <li><button href="" class="link my-courses__menu-item" type="button">Watchlist</button></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- courses -->
+                <div class="my-courses__cards-wrapper">
+                    <!-- card 1 -->
+                    <div class="my-courses__card">
+                        <div class="my-courses__card-img-wrapper">
+                            <img src="../src/img/education/course-01.svg" class="my-courses__card-img" alt="">
+                        </div>
+
+                        <div class="my-courses__card-info-wrapper">
+                            <h3 class="my-courses__card-title">The Ultimate Drawing Course</h3>
+                            <small class="my-courses__card-desc">This course will teach you how to draw like a pro!</small>
+                        </div>
+
+                        <div class="my-courses__card-rating-wrapper">
+                            <span class="my-courses__card-icon"></span>
+                            <span>8.9</span>
+                        </div>
+
+                        <div class="my-courses__card-btns-wrapper">
+                            <button type="button" class="btn my-courses__card-btn">View Course</button>
+                            <button type="button" class="btn my-courses__card-options" aria-label="Options"></button>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="my-courses__card">
+                        <div class="my-courses__card-img-wrapper">
+                            <img src="../src/img/education/course-02.svg" class="my-courses__card-img" alt="">
+                        </div>
+
+                        <div class="my-courses__card-info-wrapper">
+                            <h3 class="my-courses__card-title">Video Production Bootcamp</h3>
+                            <small class="my-courses__card-desc">Make better videos with the ultimate course on videography.</small>
+                        </div>
+
+                        <div class="my-courses__card-rating-wrapper">
+                            <span class="my-courses__card-icon"></span>
+                            <span>7.6</span>
+                        </div>
+
+                        <div class="my-courses__card-btns-wrapper">
+                            <button type="button" class="btn my-courses__card-btn">View Course</button>
+                            <button type="button" class="btn my-courses__card-options" aria-label="Options"></button>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="my-courses__card">
+                        <div class="my-courses__card-img-wrapper">
+                            <img src="../src/img/education/course-03.svg" class="my-courses__card-img" alt="">
+                        </div>
+
+                        <div class="my-courses__card-info-wrapper">
+                            <h3 class="my-courses__card-title">The Complete Coding for Beginners Course</h3>
+                            <small class="my-courses__card-desc">Become a Developer with this Step-by-Step coding course.</small>
+                        </div>
+
+                        <div class="my-courses__card-rating-wrapper">
+                            <span class="my-courses__card-icon"></span>
+                            <span>8.2</span>
+                        </div>
+
+                        <div class="my-courses__card-btns-wrapper">
+                            <button type="button" class="btn my-courses__card-btn">View Course</button>
+                            <button type="button" class="btn my-courses__card-options" aria-label="Options"></button>
+                        </div>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="my-courses__card">
+                        <div class="my-courses__card-img-wrapper">
+                            <img src="../src/img/education/course-04.svg" class="my-courses__card-img" alt="">
+                        </div>
+
+                        <div class="my-courses__card-info-wrapper">
+                            <h3 class="my-courses__card-title">Learning How to Learn</h3>
+                            <small class="my-courses__card-desc">Know how to keep your genius mind open.</small>
+                        </div>
+
+                        <div class="my-courses__card-rating-wrapper">
+                            <span class="my-courses__card-icon"></span>
+                            <span>7.3</span>
+                        </div>
+
+                        <div class="my-courses__card-btns-wrapper">
+                            <button type="button" class="btn my-courses__card-btn">View Course</button>
+                            <button type="button" class="btn my-courses__card-options" aria-label="Options"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- info -->
+    <aside class="aside info">
+        <div class="info__content">
+            <!-- img -->
+            <div class="info__img-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" class="info__img-mask-top" viewBox="0 0 1600 70.32">
+                    <path d="m0,70.32h1600S1191.67,0,790.33,0,0,70.32,0,70.32Z" />
+                </svg>
+
+                <img src="../src/img/education/info-img.svg" class="info__img" alt="">
+
+                <div class="info__img-info-wrapper">
+                    <strong class="info__img-title">Weekly news!</strong>
+                    <small>Lets read it!</small>
+
+                    <button class="btn info__btn-round info__img-btn" type="button" aria-label="Read news">
+                        <span class="info__img-btn-icon info__btn-round-icon"></span>
+                    </button>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="info__img-mask-bottom" viewBox="0 0 1600 70.32">
+                    <path d="m0,70.32h1600S1191.67,0,790.33,0,0,70.32,0,70.32Z" />
+                </svg>
+            </div>
+
+            <!-- person -->
+            <div class="info__person-wrapper">
+                <div class="info__person">
+                    <div class="info__person-img-wrapper">
+                        <img src="../src/img/education/person-img.webp" class="info__person-img" alt="">
+                    </div>
+
+                    <div class="info__person-info">
+                        <h4 class="info__person-name">Username</h4>
+                        <small class="info__person-position">Designer</small>
+                    </div>
+
+                    <div class="info__person-icon-wrapper">
+                        <button class="btn info__btn-round" type="button" aria-label="Show or hide stats">
+                            <span class="info__person-icon info__btn-round-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- stats -->
+            <div class="info__stats-wrapper">
+                <!-- card -->
+                <div class="info__card">
+                    <h4 class="info__card-title">24</h4>
+
+                    <div class="info__card-info-wrapper">
+                        <small>Courses<br>Completed</small>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="info__card">
+                    <h4 class="info__card-title">22</h4>
+
+                    <div class="info__card-info-wrapper">
+                        <small>Certificates<br>Earned</small>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="info__card">
+                    <h4 class="info__card-title">12</h4>
+
+                    <div class="info__card-info-wrapper">
+                        <small>Courses<br>In progress</small>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="info__card">
+                    <h4 class="info__card-title">18</h4>
+
+                    <div class="info__card-info-wrapper">
+                        <small>Courses<br>Discussions</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- articles -->
+            <div class="info__articles-wrapper">
+                <h3 class="info__article-block-title">Learn more</h3>
+
+                <!-- article -->
+                <div class="info__article">
+                    <div class="info__article-img-wrapper">
+                        <img src="../src/img/education/news-01.webp" class="info__article-img" alt="">
+                    </div>
+
+                    <div class="info__article-info">
+                        <h4 class="info__article-title">New and Improved from IBM!</h4>
+                        <small class="info__article-desc">Technologies</small>
+                    </div>
+                </div>
+
+                <!-- article -->
+                <div class="info__article">
+                    <div class="info__article-img-wrapper">
+                        <img src="../src/img/education/news-02.webp" class="info__article-img" alt="">
+                    </div>
+
+                    <div class="info__article-info">
+                        <h4 class="info__article-title">New ChatGPT plugin and generative AI...</h4>
+                        <small class="info__article-desc">Artificial Intelligence</small>
+                    </div>
+                </div>
+
+                <!-- article -->
+                <div class="info__article">
+                    <div class="info__article-img-wrapper">
+                        <img src="../src/img/education/news-03.webp" class="info__article-img" alt="">
+                    </div>
+
+                    <div class="info__article-info">
+                        <h4 class="info__article-title">Get business insights from research...</h4>
+                        <small class="info__article-desc">Business</small>
+                    </div>
+                </div>
+
+                <!-- article -->
+                <div class="info__article">
+                    <div class="info__article-img-wrapper">
+                        <img src="../src/img/education/news-04.webp" class="info__article-img" alt="">
+                    </div>
+
+                    <div class="info__article-info">
+                        <h4 class="info__article-title">Unlocking a world of opportunities for...</h4>
+                        <small class="info__article-desc">Education</small>
+                    </div>
+                </div>
+
+                <div class="info__article-bottom">
+                    <a href="" class="info__article-bottom-link info__btn-round">
+                        <small>VIEW MORE</small>
+                        <span class="info__article-bottom-icon info__btn-round-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <script src="../src/scripts/education/mediaQuery.js"></script>
+    <script src="../src/scripts/education/onClick.js"></script>
+</body>
+
+</html>
