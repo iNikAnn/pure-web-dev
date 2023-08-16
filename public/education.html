@@ -7,185 +7,200 @@
     <title>Education</title>
 
     <link rel="stylesheet" href="../src/css/normalize.css">
-    <link rel="stylesheet" href="../src/css/education.css">
+    <link rel="stylesheet" href="../src/css/education-bem.css">
 </head>
 
 <body id="body">
     <!-- overlay -->
     <div id="overlay" class="overlay"></div>
 
-    <!-- menu -->
-    <aside id="menu" class="aside menu">
-        <div class="menu__content">
-            <!-- title -->
-            <div class="menu__logo-wrapper">
-                <h1 class="menu__title">logo</h1>
+    <!-- mobile header -->
+    <div class="mobile-btns-wrapper">
+        <button id="mobile-leftbar-btn" class="btn-round" type="button" aria-label="Expand or collapse menu">
+            <span class="btn-round__icon btn-round__icon-menu"></span>
+        </button>
 
-                <button id="menu-btn" class="btn menu__btn" type="button" aria-label="Expand or collapse menu">
-                    <span class="menu__btn-icon"></span>
+        <button id="mobile-rightbar-btn" class="btn-round" type="button" aria-label="Expand or collapse menu">
+            <span class="btn-round__icon btn-round__icon-layers"></span>
+        </button>
+    </div>
+
+    <!-- leftbar -->
+    <aside id="leftbar" class="leftbar leftbar_collapsed">
+        <!-- header -->
+        <div class="leftbar__block-wrapper leftbar__header-wrapper">
+            <div class="leftbar__header">
+                <span class="leftbar__logo"></span>
+
+                <span class="leftbar__title">CoursifyHub</span>
+
+                <button id="leftbar-btn" class="leftbar__btn" type="button" aria-label="Expand or collapse menu">
+                    <span class="leftbar__btn-icon"></span>
                 </button>
             </div>
+        </div>
 
-            <!-- nav list -->
-            <nav class="menu__nav">
+        <!-- menu -->
+        <div class="leftbar__block-wrapper leftbar__menu-wrapper">
+            <nav id="menu" class="menu menu_collapsed">
                 <ul class="menu__nav-list">
                     <!-- nav item -->
-                    <li class="menu__nav-item active">
-                        <a href="" class="menu__nav-link">
-                            <div class="menu__nav-link-wrapper">
-                                <div class="menu__nav-icon-wrapper">
-                                    <span class="menu__nav-icon menu__nav-icon-dashboard"></span>
-                                </div>
-
-                                <span class="menu__nav-text">Dashboard</span>
+                    <li class="menu__nav-item menu__nav-item_active">
+                        <button type="button" class="menu__btn" aria-label="Dashboard page">
+                            <div class="menu__icon-wrapper">
+                                <span class="menu__icon menu__icon_dashboard"></span>
                             </div>
-                        </a>
+                            <span class="menu__text">Dashboard</span>
+                        </button>
                     </li>
 
                     <!-- nav item -->
                     <li class="menu__nav-item">
-                        <a href="" class="menu__nav-link">
-                            <div class="menu__nav-link-wrapper">
-                                <div class="menu__nav-icon-wrapper">
-                                    <span class="menu__nav-icon menu__nav-icon-profile"></span>
-                                </div>
-
-                                <span class="menu__nav-text">Profile</span>
+                        <button type="button" class="menu__btn" aria-label="Profile page">
+                            <div class="menu__icon-wrapper">
+                                <span class="menu__icon menu__icon_profile"></span>
                             </div>
-                        </a>
+                            <span class="menu__text">Profile</span>
+                        </button>
                     </li>
 
                     <!-- nav item -->
                     <li class="menu__nav-item">
-                        <a href="" class="menu__nav-link">
-                            <div class="menu__nav-link-wrapper">
-                                <div class="menu__nav-icon-wrapper">
-                                    <span class="menu__nav-icon menu__nav-icon-courses"></span>
-                                </div>
-
-                                <span class="menu__nav-text">Courses</span>
+                        <button type="button" class="menu__btn" aria-label="Courses page">
+                            <div class="menu__icon-wrapper">
+                                <span class="menu__icon menu__icon_courses"></span>
                             </div>
-                        </a>
+                            <span class="menu__text">Courses</span>
+                        </button>
                     </li>
 
                     <!-- nav item -->
                     <li class="menu__nav-item">
-                        <a href="" class="menu__nav-link">
-                            <div class="menu__nav-link-wrapper">
-                                <div class="menu__nav-icon-wrapper">
-                                    <span class="menu__nav-icon menu__nav-icon-message"></span>
-                                </div>
-
-                                <span class="menu__nav-text">Message</span>
+                        <button type="button" class="menu__btn" aria-label="Messages page">
+                            <div class="menu__icon-wrapper">
+                                <span class="menu__icon menu__icon_message"></span>
                             </div>
-                        </a>
+                            <span class="menu__text">Messages</span>
+                        </button>
                     </li>
 
                     <!-- nav item -->
                     <li class="menu__nav-item">
-                        <a href="" class="menu__nav-link">
-                            <div class="menu__nav-link-wrapper">
-                                <div class="menu__nav-icon-wrapper">
-                                    <span class="menu__nav-icon menu__nav-icon-settings"></span>
-                                </div>
-
-                                <span class="menu__nav-text">Settings</span>
+                        <button type="button" class="menu__btn" aria-label="Settings page">
+                            <div class="menu__icon-wrapper">
+                                <span class="menu__icon menu__icon_settings"></span>
                             </div>
-                        </a>
+                            <span class="menu__text">Settings</span>
+                        </button>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="menu__nav-item menu__toggleRightbarItem">
+                        <button id="toggleRightbarBtn" type="button" class="menu__btn" aria-label="Show or hide rightbar">
+                            <div class="menu__icon-wrapper">
+                                <span class="menu__icon menu__icon_toggleRightbar"></span>
+                            </div>
+                            <span class="menu__text">Toggle rightbar</span>
+                        </button>
                     </li>
                 </ul>
             </nav>
+        </div>
 
-            <!-- img -->
-            <div class="menu__img-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" class="menu__img-mask-top" viewBox="0 0 1600 80.32">
-                    <path d="m0,80.32h1600S1191.67,1.91,790.33,1.91,0,80.32,0,80.32Z" />
-                </svg>
+        <!-- promotion -->
+        <div class="leftbar__block-wrapper leftbar__promotion-wrapper">
+            <div class="promotion">
+                <!-- img with mask -->
+                <div class="promotion__img-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="promotion__mask-top" viewBox="0 0 1600 80.32">
+                        <path d="m0,80.32h1600S1191.67,1.91,790.33,1.91,0,80.32,0,80.32Z" />
+                    </svg>
 
-                <img src="../src/img/education/menu-img.svg" class="menu__img" alt="">
+                    <img src="../src/img/education/menu-img.svg" class="promotion__img" alt="">
 
-                <div class="menu__img-text-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="promotion__mask-bottom" viewBox="0 0 1600 80.32">
+                        <path d="m0,80.32h1600S1191.67,1.91,790.33,1.91,0,80.32,0,80.32Z" />
+                    </svg>
+                </div>
+
+                <!-- text -->
+                <div class="promotion__text-wrapper">
                     <strong>15 million learners</strong>
                     <br>
                     <small>around the world!</small>
                 </div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="menu__img-mask-bottom" viewBox="0 0 1600 80.32">
-                    <path d="m0,80.32h1600S1191.67,1.91,790.33,1.91,0,80.32,0,80.32Z" />
-                </svg>
             </div>
         </div>
     </aside>
 
-    <!-- mobile header -->
-    <div class="mobile__header">
-        <h1>Logo</h1>
-
-        <button id="mobile-menu-btn" class="btn menu__btn" type="button" aria-label="Expand or collapse menu">
-            <span class="menu__btn-icon"></span>
-        </button>
-    </div>
-
     <!-- main content -->
-    <main class="main">
+    <main id="main">
         <!-- popular -->
-        <section class="section popular">
-            <div class="popular__content">
-                <div class="popular__header">
-                    <h2 class="popular__title">Popular courses</h2>
-                    <a href="" class="popular__link">View more</a>
+        <section class="main-section popular-section">
+            <!-- content -->
+            <div class="content">
+                <div class="content__header">
+                    <h2 class="content__title">Popular courses</h2>
+
+                    <nav>
+                        <ul class="content__nav-list">
+                            <li class="content__nav-item">
+                                <button type="button">View more</button>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <!-- cards -->
-                <div class="popular__cards-wrapper">
-                    <!-- card 1 -->
-                    <div class="popular__card">
-                        <div class="popular__card-img-wrapper">
-                            <img src="../src/img/education/popular-01.svg" class="popular__card-img" alt="">
+                <!-- vertical cards -->
+                <div class="content__vertical-cards-wrapper">
+                    <!-- vertical-card 1 -->
+                    <div class="card vertical-card">
+                        <div class="vertical-card__img-wrapper">
+                            <img class="vertical-card__img" src="../src/img/education/popular-01.svg" alt="">
                         </div>
 
-                        <h3 class="popular__card-title">Creating Responsive Web Design</h3>
+                        <h3 class="vertical-card__title">Creating Responsive Web Design</h3>
 
-                        <div class="popular__card-progress-wrapper">
-                            <div class="popular__card-progress popular__card-progress1"></div>
+                        <div class="vertical-card__info-wrapper">
+                            <div class="vertical-card__progress vertical-card__progress1"></div>
 
-                            <div class="popular__card-info">
+                            <div class="vertical-card__desc-wrapper">
                                 <small>Booked: <b>23%</b></small>
                                 <small>Days: <b>21</b></small>
                             </div>
                         </div>
                     </div>
 
-                    <!-- card 2 -->
-                    <div class="popular__card">
-                        <div class="popular__card-img-wrapper">
-                            <img src="../src/img/education/popular-02.svg" class="popular__card-img" alt="">
+                    <!-- vertical-card 2 -->
+                    <div class="card vertical-card">
+                        <div class="vertical-card__img-wrapper">
+                            <img class="vertical-card__img" src="../src/img/education/popular-02.svg" alt="">
                         </div>
 
-                        <h3 class="popular__card-title">User Experience Design Fundamentals</h3>
+                        <h3 class="vertical-card__title">User Experience Design Fundamentals</h3>
 
-                        <div class="popular__card-progress-wrapper">
-                            <div class="popular__card-progress popular__card-progress2"></div>
+                        <div class="vertical-card__info-wrapper">
+                            <div class="vertical-card__progress vertical-card__progress2"></div>
 
-                            <div class="popular__card-info">
+                            <div class="vertical-card__desc-wrapper">
                                 <small>Booked: <b>55%</b></small>
                                 <small>Days: <b>14</b></small>
                             </div>
                         </div>
                     </div>
 
-                    <!-- card 3 -->
-                    <div class="popular__card">
-                        <div class="popular__card-img-wrapper">
-                            <img src="../src/img/education/popular-03.svg" class="popular__card-img" alt="">
+                    <!-- vertical-card 3 -->
+                    <div class="card vertical-card">
+                        <div class="vertical-card__img-wrapper">
+                            <img class="vertical-card__img" src="../src/img/education/popular-03.svg" alt="">
                         </div>
 
-                        <h3 class="popular__card-title">Design Thinking: The Beginner's Guide</h3>
+                        <h3 class="vertical-card__title">Design Thinking: The Beginner's Guide</h3>
 
-                        <div class="popular__card-progress-wrapper">
-                            <div class="popular__card-progress popular__card-progress3"></div>
+                        <div class="vertical-card__info-wrapper">
+                            <div class="vertical-card__progress vertical-card__progress3"></div>
 
-                            <div class="popular__card-info">
+                            <div class="vertical-card__desc-wrapper">
                                 <small>Booked: <b>81%</b></small>
                                 <small>Days: <b>07</b></small>
                             </div>
@@ -196,109 +211,132 @@
         </section>
 
         <!-- my-courses -->
-        <section class="section my-courses">
-            <div class="my-courses__content">
-                <!-- menu -->
-                <div class="my-courses__menu">
-                    <h2 class="my-courses__menu-title">My courses</h2>
+        <section class="main-section my-courses-section">
+            <!-- content -->
+            <div class="content">
+                <div class="content__header">
+                    <h2 class="content__title">My courses</h2>
 
                     <nav>
-                        <ul class="my-courses__menu-list">
-                            <li><button href="" class="link my-courses__menu-item active" type="button">Current</button></li>
-                            <li><button href="" class="link my-courses__menu-item" type="button">Archived</button></li>
-                            <li><button href="" class="link my-courses__menu-item" type="button">Upcoming</button></li>
-                            <li><button href="" class="link my-courses__menu-item" type="button">Watchlist</button></li>
+                        <ul class="content__nav-list">
+                            <li class="content__nav-item content__nav-item_active">
+                                <button type="button">Current</button>
+                            </li>
+
+                            <li class="content__nav-item">
+                                <button type="button">Archived</button>
+                            </li>
+
+                            <li class="content__nav-item">
+                                <button type="button">Upcoming</button>
+                            </li>
+
+                            <li class="content__nav-item">
+                                <button type="button">Watchlist</button>
+                            </li>
                         </ul>
                     </nav>
                 </div>
 
-                <!-- courses -->
-                <div class="my-courses__cards-wrapper">
-                    <!-- card 1 -->
-                    <div class="my-courses__card">
-                        <div class="my-courses__card-img-wrapper">
-                            <img src="../src/img/education/course-01.svg" class="my-courses__card-img" alt="">
+                <!-- courses tab 1-->
+                <div class="content__horizontal-card-wrapper">
+                    <!-- horizontal-card 1 -->
+                    <div class="card horizontal-card">
+                        <div class="horizontal-card__img-wrapper">
+                            <img class="horizontal-card__img" src="../src/img/education/course-01.svg" alt="">
                         </div>
 
-                        <div class="my-courses__card-info-wrapper">
-                            <h3 class="my-courses__card-title">The Ultimate Drawing Course</h3>
-                            <small class="my-courses__card-desc">This course will teach you how to draw like a pro!</small>
+                        <div class="horizontal-card__info-wrapper">
+                            <a>
+                                <h3 class="horizontal-card__title">The Ultimate Drawing Course</h3>
+                            </a>
+
+                            <small class="horizontal-card__desc">This course will teach you how to draw like a pro!</small>
                         </div>
 
-                        <div class="my-courses__card-rating-wrapper">
-                            <span class="my-courses__card-icon"></span>
+                        <div class="horizontal-card__rating-wrapper">
+                            <span class="horizontal-card__rating-icon"></span>
                             <span>8.9</span>
                         </div>
 
-                        <div class="my-courses__card-btns-wrapper">
-                            <button type="button" class="btn my-courses__card-btn">View Course</button>
-                            <button type="button" class="btn my-courses__card-options" aria-label="Options"></button>
+                        <div class="horizontal-card__btns-wrapper">
+                            <button type="button" class="btn-primary">View Course</button>
+                            <button type="button" class="btn-options" aria-label="Options"></button>
                         </div>
                     </div>
 
-                    <!-- card 2 -->
-                    <div class="my-courses__card">
-                        <div class="my-courses__card-img-wrapper">
-                            <img src="../src/img/education/course-02.svg" class="my-courses__card-img" alt="">
+                    <!-- horizontal-card 2 -->
+                    <div class="card horizontal-card">
+                        <div class="horizontal-card__img-wrapper">
+                            <img class="horizontal-card__img" src="../src/img/education/course-02.svg" alt="">
                         </div>
 
-                        <div class="my-courses__card-info-wrapper">
-                            <h3 class="my-courses__card-title">Video Production Bootcamp</h3>
-                            <small class="my-courses__card-desc">Make better videos with the ultimate course on videography.</small>
+                        <div class="horizontal-card__info-wrapper">
+                            <a>
+                                <h3 class="horizontal-card__title">Video Production Bootcamp</h3>
+                            </a>
+
+                            <small class="horizontal-card__desc">Make better videos with the ultimate course on videography.</small>
                         </div>
 
-                        <div class="my-courses__card-rating-wrapper">
-                            <span class="my-courses__card-icon"></span>
+                        <div class="horizontal-card__rating-wrapper">
+                            <span class="horizontal-card__rating-icon"></span>
                             <span>7.6</span>
                         </div>
 
-                        <div class="my-courses__card-btns-wrapper">
-                            <button type="button" class="btn my-courses__card-btn">View Course</button>
-                            <button type="button" class="btn my-courses__card-options" aria-label="Options"></button>
+                        <div class="horizontal-card__btns-wrapper">
+                            <button type="button" class="btn-primary">View Course</button>
+                            <button type="button" class="btn-options" aria-label="Options"></button>
                         </div>
                     </div>
 
-                    <!-- card 3 -->
-                    <div class="my-courses__card">
-                        <div class="my-courses__card-img-wrapper">
-                            <img src="../src/img/education/course-03.svg" class="my-courses__card-img" alt="">
+                    <!-- horizontal-card 3 -->
+                    <div class="card horizontal-card">
+                        <div class="horizontal-card__img-wrapper">
+                            <img class="horizontal-card__img" src="../src/img/education/course-03.svg" alt="">
                         </div>
 
-                        <div class="my-courses__card-info-wrapper">
-                            <h3 class="my-courses__card-title">The Complete Coding for Beginners Course</h3>
-                            <small class="my-courses__card-desc">Become a Developer with this Step-by-Step coding course.</small>
+                        <div class="horizontal-card__info-wrapper">
+                            <a>
+                                <h3 class="horizontal-card__title">Coding for Beginners</h3>
+                            </a>
+
+                            <small class="horizontal-card__desc">Become a Developer with this Step-by-Step coding course.</small>
                         </div>
 
-                        <div class="my-courses__card-rating-wrapper">
-                            <span class="my-courses__card-icon"></span>
+                        <div class="horizontal-card__rating-wrapper">
+                            <span class="horizontal-card__rating-icon"></span>
                             <span>8.2</span>
                         </div>
 
-                        <div class="my-courses__card-btns-wrapper">
-                            <button type="button" class="btn my-courses__card-btn">View Course</button>
-                            <button type="button" class="btn my-courses__card-options" aria-label="Options"></button>
+                        <div class="horizontal-card__btns-wrapper">
+                            <button type="button" class="btn-primary">View Course</button>
+                            <button type="button" class="btn-options" aria-label="Options"></button>
                         </div>
                     </div>
 
-                    <!-- card 4 -->
-                    <div class="my-courses__card">
-                        <div class="my-courses__card-img-wrapper">
-                            <img src="../src/img/education/course-04.svg" class="my-courses__card-img" alt="">
+                    <!-- horizontal-card 4 -->
+                    <div class="card horizontal-card">
+                        <div class="horizontal-card__img-wrapper">
+                            <img class="horizontal-card__img" src="../src/img/education/course-04.svg" alt="">
                         </div>
 
-                        <div class="my-courses__card-info-wrapper">
-                            <h3 class="my-courses__card-title">Learning How to Learn</h3>
-                            <small class="my-courses__card-desc">Know how to keep your genius mind open.</small>
+                        <div class="horizontal-card__info-wrapper">
+                            <a>
+                                <h3 class="horizontal-card__title">Learning How to Learn</h3>
+                            </a>
+
+                            <small class="horizontal-card__desc">Know how to keep your genius mind open.</small>
                         </div>
 
-                        <div class="my-courses__card-rating-wrapper">
-                            <span class="my-courses__card-icon"></span>
+                        <div class="horizontal-card__rating-wrapper">
+                            <span class="horizontal-card__rating-icon"></span>
                             <span>7.3</span>
                         </div>
 
-                        <div class="my-courses__card-btns-wrapper">
-                            <button type="button" class="btn my-courses__card-btn">View Course</button>
-                            <button type="button" class="btn my-courses__card-options" aria-label="Options"></button>
+                        <div class="horizontal-card__btns-wrapper">
+                            <button type="button" class="btn-primary">View Course</button>
+                            <button type="button" class="btn-options" aria-label="Options"></button>
                         </div>
                     </div>
                 </div>
@@ -306,147 +344,158 @@
         </section>
     </main>
 
-    <!-- info -->
-    <aside class="aside info">
-        <div class="info__content">
-            <!-- img -->
-            <div class="info__img-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" class="info__img-mask-top" viewBox="0 0 1600 70.32">
-                    <path d="m0,70.32h1600S1191.67,0,790.33,0,0,70.32,0,70.32Z" />
-                </svg>
+    <!-- rightbar -->
+    <aside id="rightbar" class="rightbar">
+        <!-- enticement -->
+        <div class="rightbar__block-wrapper rightbar__enticement-wrapper">
+            <div class="enticement">
+                <!-- img -->
+                <div class="enticement__img-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="enticement__mask-top" viewBox="0 0 1600 70.32">
+                        <path d="m0,70.32h1600S1191.67,0,790.33,0,0,70.32,0,70.32Z" />
+                    </svg>
 
-                <img src="../src/img/education/info-img.svg" class="info__img" alt="">
+                    <img class="enticement__img" src="../src/img/education/info-img.svg" alt="">
 
-                <div class="info__img-info-wrapper">
-                    <strong class="info__img-title">Weekly news!</strong>
-                    <small>Lets read it!</small>
-
-                    <button class="btn info__btn-round info__img-btn" type="button" aria-label="Read news">
-                        <span class="info__img-btn-icon info__btn-round-icon"></span>
-                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="enticement__mask-bottom" viewBox="0 0 1600 70.32">
+                        <path d="m0,70.32h1600S1191.67,0,790.33,0,0,70.32,0,70.32Z" />
+                    </svg>
                 </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="info__img-mask-bottom" viewBox="0 0 1600 70.32">
-                    <path d="m0,70.32h1600S1191.67,0,790.33,0,0,70.32,0,70.32Z" />
-                </svg>
-            </div>
+                <!-- text with btn -->
+                <div class="enticement__info-wrapper">
+                    <strong class="enticement__title">Weekly news!</strong>
+                    <small>Lets read it!</small>
 
-            <!-- person -->
-            <div class="info__person-wrapper">
-                <div class="info__person">
-                    <div class="info__person-img-wrapper">
-                        <img src="../src/img/education/person-img.webp" class="info__person-img" alt="">
-                    </div>
-
-                    <div class="info__person-info">
-                        <h4 class="info__person-name">Username</h4>
-                        <small class="info__person-position">Designer</small>
-                    </div>
-
-                    <div class="info__person-icon-wrapper">
-                        <button class="btn info__btn-round" type="button" aria-label="Show or hide stats">
-                            <span class="info__person-icon info__btn-round-icon"></span>
+                    <div class="enticement__btn-wrapper">
+                        <button class="btn-round" type="button" aria-label="Read news">
+                            <span class="btn-round__icon btn-round__icon-arrow"></span>
                         </button>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- stats -->
-            <div class="info__stats-wrapper">
-                <!-- card -->
-                <div class="info__card">
-                    <h4 class="info__card-title">24</h4>
+        <!-- person and stats -->
+        <div class="rightbar__block-wrapper rightbar__person-wrapper">
+            <!-- person -->
+            <div class="person">
+                <div class="person__img-wrapper">
+                    <img src="../src/img/education/person-img.webp" class="person__img" alt="">
+                </div>
 
-                    <div class="info__card-info-wrapper">
+                <div class="person__info-wrapper">
+                    <h4 class="person__name">Jake Cooper</h4>
+                    <small class="person__position">Designer</small>
+                </div>
+
+                <div class="person__btn-wrapper">
+                    <button id="person-btn" class="btn-round" type="button" aria-label="Show or hide stats">
+                        <span class="btn-round__icon btn-round__icon-arrow-down-up"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- stats-cards -->
+            <div class="stats-cards__wrapper">
+                <!-- card 1 -->
+                <div class="stats-card">
+                    <h4 class="stats__title">24</h4>
+
+                    <div class="stats__text-wrapper">
                         <small>Courses<br>Completed</small>
                     </div>
                 </div>
 
-                <!-- card -->
-                <div class="info__card">
-                    <h4 class="info__card-title">22</h4>
+                <!-- card 2 -->
+                <div class="stats-card">
+                    <h4 class="stats__title">22</h4>
 
-                    <div class="info__card-info-wrapper">
+                    <div class="stats__text-wrapper">
                         <small>Certificates<br>Earned</small>
                     </div>
                 </div>
 
-                <!-- card -->
-                <div class="info__card">
-                    <h4 class="info__card-title">12</h4>
+                <!-- card 3 -->
+                <div class="stats-card">
+                    <h4 class="stats__title">12</h4>
 
-                    <div class="info__card-info-wrapper">
+                    <div class="stats__text-wrapper">
                         <small>Courses<br>In progress</small>
                     </div>
                 </div>
 
-                <!-- card -->
-                <div class="info__card">
-                    <h4 class="info__card-title">18</h4>
+                <!-- card 4 -->
+                <div class="stats-card">
+                    <h4 class="stats__title">18</h4>
 
-                    <div class="info__card-info-wrapper">
+                    <div class="stats__text-wrapper">
                         <small>Courses<br>Discussions</small>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- articles -->
-            <div class="info__articles-wrapper">
-                <h3 class="info__article-block-title">Learn more</h3>
+        <!-- articles -->
+        <div class="rightbar__block-wrapper rightbar__articles-wrapper">
+            <div class="articles">
+                <h3 class="articles__title">Learn more</h3>
 
-                <!-- article -->
-                <div class="info__article">
-                    <div class="info__article-img-wrapper">
-                        <img src="../src/img/education/news-01.webp" class="info__article-img" alt="">
+                <!-- article 1 -->
+                <div class="article">
+                    <div class="article__img-wrapper">
+                        <img class="article__img" src="../src/img/education/news-01.webp" alt="">
                     </div>
 
-                    <div class="info__article-info">
-                        <h4 class="info__article-title">New and Improved from IBM!</h4>
-                        <small class="info__article-desc">Technologies</small>
-                    </div>
-                </div>
-
-                <!-- article -->
-                <div class="info__article">
-                    <div class="info__article-img-wrapper">
-                        <img src="../src/img/education/news-02.webp" class="info__article-img" alt="">
-                    </div>
-
-                    <div class="info__article-info">
-                        <h4 class="info__article-title">New ChatGPT plugin and generative AI...</h4>
-                        <small class="info__article-desc">Artificial Intelligence</small>
+                    <div class="article__info">
+                        <h4 class="article__title">New and Improved from IBM!</h4>
+                        <small class="article__desc">Technologies</small>
                     </div>
                 </div>
 
-                <!-- article -->
-                <div class="info__article">
-                    <div class="info__article-img-wrapper">
-                        <img src="../src/img/education/news-03.webp" class="info__article-img" alt="">
+                <!-- article 2 -->
+                <div class="article">
+                    <div class="article__img-wrapper">
+                        <img class="article__img" src="../src/img/education/news-02.webp" alt="">
                     </div>
 
-                    <div class="info__article-info">
-                        <h4 class="info__article-title">Get business insights from research...</h4>
-                        <small class="info__article-desc">Business</small>
-                    </div>
-                </div>
-
-                <!-- article -->
-                <div class="info__article">
-                    <div class="info__article-img-wrapper">
-                        <img src="../src/img/education/news-04.webp" class="info__article-img" alt="">
-                    </div>
-
-                    <div class="info__article-info">
-                        <h4 class="info__article-title">Unlocking a world of opportunities for...</h4>
-                        <small class="info__article-desc">Education</small>
+                    <div class="article__info">
+                        <h4 class="article__title">New ChatGPT plugin and generative AI...</h4>
+                        <small class="article__desc">Artificial Intelligence</small>
                     </div>
                 </div>
 
-                <div class="info__article-bottom">
-                    <a href="" class="info__article-bottom-link info__btn-round">
-                        <small>VIEW MORE</small>
-                        <span class="info__article-bottom-icon info__btn-round-icon"></span>
-                    </a>
+                <!-- article 3 -->
+                <div class="article">
+                    <div class="article__img-wrapper">
+                        <img class="article__img" src="../src/img/education/news-03.webp" alt="">
+                    </div>
+
+                    <div class="article__info">
+                        <h4 class="article__title">Get business insights from research...</h4>
+                        <small class="article__desc">Business</small>
+                    </div>
+                </div>
+
+                <!-- article 4 -->
+                <div class="article">
+                    <div class="article__img-wrapper">
+                        <img class="article__img" src="../src/img/education/news-04.webp" alt="">
+                    </div>
+
+                    <div class="article__info">
+                        <h4 class="article__title">Unlocking a world of opportunities for...</h4>
+                        <small class="article__desc">Education</small>
+                    </div>
+                </div>
+
+                <!-- btn -->
+                <div class="articles__btn-wrapper">
+                    <small>VIEW MORE</small>
+
+                    <button class="btn-round">
+                        <span class="btn-round__icon btn-round__icon-arrow"></span>
+                    </button>
                 </div>
             </div>
         </div>
